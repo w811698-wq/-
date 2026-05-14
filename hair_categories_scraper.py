@@ -56,9 +56,43 @@ for elem in soup.select('[data-asin]'):
 
 print(f"成功抓取 {len(all_products)} 个商品")
 
+target_asin = 'B0DGQ7K4DH'
+print(f"\n抓取指定商品 {target_asin}...")
+
+product_url = f'https://www.amazon.com/dp/{target_asin}'
+resp = session.get(product_url, headers=headers, timeout=30)
+soup2 = BeautifulSoup(resp.text, 'html.parser')
+
+title_elem = soup2.select_one('#productTitle')
+title = title_elem.text.strip() if title_elem else 'N/A'
+
+brand_elem = soup2.select_one('#bylineInfo') or soup2.select_one('[brand]')
+if brand_elem:
+    brand = brand_elem.text.strip().replace('Visit the ', '').replace(' Store', '')
+else:
+    brand = extract_brand(title)
+
+price_elem = soup2.select_one('.a-price .a-offscreen') or soup2.select_one('#priceblock_ourprice') or soup2.select_one('#priceblock_dealprice')
+price = price_elem.text.strip() if price_elem else 'N/A'
+
+target_product = {
+    'rank': 0,
+    'asin': target_asin,
+    'title': title,
+    'price': price,
+    'brand': brand
+}
+
+print(f"商品信息：")
+print(f"  标题：{title}")
+print(f"  品牌：{brand}")
+print(f"  价格：{price}")
+
 ponytail_products = [p for p in all_products if 'Ponytail' in p['title'] or ' pony' in p['title'].lower()]
 topper_products = [p for p in all_products if 'topper' in p['title'].lower() and 'bangs' not in p['title'].lower()]
 extension_products = [p for p in all_products if ('Extension' in p['title'] or 'Extensions' in p['title']) and 'Pony' not in p['title']]
+
+topper_products.append(target_product)
 
 results = {
     'Ponytail Extension': ponytail_products,
@@ -86,7 +120,7 @@ for name, products in results.items():
     if products:
         print("\n详细商品：")
         for p in products:
-            print(f"  #{p['rank']} | {p['brand']} | {p['asin']} | {p['price']} | {p['title']}")
+            print(f"  {p['brand']} | {p['asin']} | {p['price']} | {p['title'][:60]}...")
 
 all_brands = set()
 for products in results.values():

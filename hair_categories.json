@@ -106,7 +106,15 @@
       "brand": "KooKaStyle Ponytail"
     }
   ],
-  "Hair Topper": [],
+  "Hair Topper": [
+    {
+      "rank": 0,
+      "asin": "B0DGQ7K4DH",
+      "title": "N/A",
+      "price": "N/A",
+      "brand": "Unknown"
+    }
+  ],
   "Hair Extensions": [
     {
       "rank": 7,
