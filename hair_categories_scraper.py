@@ -56,9 +56,9 @@ for elem in soup.select('[data-asin]'):
 
 print(f"成功抓取 {len(all_products)} 个商品")
 
-ponytail_products = [p for p in all_products if 'Ponytail' in p['title'] or 'Pony' in p['title']]
-topper_products = [p for p in all_products if 'Topper' in p['title'] or 'topper' in p['title']]
-extension_products = [p for p in all_products if 'Extensions' in p['title'] or 'Extension' in p['title']]
+ponytail_products = [p for p in all_products if 'Ponytail' in p['title'] or ' pony' in p['title'].lower()]
+topper_products = [p for p in all_products if 'topper' in p['title'].lower()]
+extension_products = [p for p in all_products if ('Extension' in p['title'] or 'Extensions' in p['title']) and 'Pony' not in p['title']]
 
 results = {
     'Ponytail Extension': ponytail_products,
@@ -69,20 +69,24 @@ results = {
 with open('/workspace/hair_categories.json', 'w', encoding='utf-8') as f:
     json.dump(results, f, ensure_ascii=False, indent=2)
 
-print("\n" + "="*70)
-print("📊 各品类商品及品牌分布：")
-print("="*70)
+print("\n" + "="*80)
+print("📊 各品类商品及品牌分布（重新分类）：")
+print("="*80)
 
 for name, products in results.items():
     brands = set(p['brand'] for p in products if p['brand'] != 'Unknown')
     print(f"\n📦 {name}")
     print(f"商品数量：{len(products)}")
     print(f"品牌数量：{len(brands)}")
-    print(f"品牌列表：{', '.join(sorted(brands)) if brands else '无'}")
+    if brands:
+        print(f"品牌列表：{', '.join(sorted(brands))}")
+    else:
+        print("品牌列表：无")
     
-    print("\n详细商品：")
-    for p in products:
-        print(f"  #{p['rank']} | {p['brand']} | {p['asin']} | {p['price']}")
+    if products:
+        print("\n详细商品：")
+        for p in products:
+            print(f"  #{p['rank']} | {p['brand']} | {p['asin']} | {p['price']} | {p['title'][:50]}...")
 
 all_brands = set()
 for products in results.values():
@@ -90,6 +94,6 @@ for products in results.values():
         if p['brand'] != 'Unknown':
             all_brands.add(p['brand'])
 
-print("\n" + "="*70)
+print("\n" + "="*80)
 print(f"📈 总品牌数量：{len(all_brands)}")
 print(f"所有品牌：{', '.join(sorted(all_brands))}")
