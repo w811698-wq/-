@@ -25,8 +25,8 @@ categories_data = {
     },
     "Hair Topper": {
         "count": 1,
-        "brands": ["待确认"],
-        "products": [("待确认", "B0DGQ7K4DH", "-")]
+        "brands": ["PANEWAY"],
+        "products": [("PANEWAY", "B0DGQ7K4DH", "-")]
     },
     "Hair Extensions": {
         "count": 12,
@@ -45,15 +45,15 @@ categories_data = {
 
 def build_report():
     today = datetime.now().strftime('%Y-%m-%d')
-    
+
     ponytail_brands = ", ".join(categories_data["Ponytail Extension"]["brands"])
     topper_brands = ", ".join(categories_data["Hair Topper"]["brands"])
     extension_brands = ", ".join(categories_data["Hair Extensions"]["brands"])
-    
+
     ponytail_items = "\n".join([f"• {brand} ({asin}) - {price}" for brand, asin, price in categories_data["Ponytail Extension"]["products"]])
     topper_items = "\n".join([f"• {brand} ({asin}) - {price}" for brand, asin, price in categories_data["Hair Topper"]["products"]])
     extension_items = "\n".join([f"• {brand} ({asin}) - {price}" for brand, asin, price in categories_data["Hair Extensions"]["products"]])
-    
+
     content = f"""**📊 亚马逊假发类目BSR品牌监控**
 **日期：** {today}
 
