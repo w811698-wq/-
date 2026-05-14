@@ -11,7 +11,7 @@ headers = {
 
 def extract_brand(title):
     patterns = [
-        r'^([A-Z][A-Za-z]+(?:\s+[A-Z][A-Za-z]+)*)\s+(?:Hair|Ponytail|Topper|Extension|Clip|Bangs)',
+        r'^([A-Z][A-Za-z]+(?:\s+[A-Z][A-Za-z]+)*)\s+(?:Hair|Ponytail|Topper|Extension|Clip)',
         r'^([A-Z][A-Za-z]+)\s+',
         r'^([A-Za-z]+\s+[A-Za-z]+)\s+(?:Hair|Ponytail|Topper)',
     ]
@@ -57,7 +57,7 @@ for elem in soup.select('[data-asin]'):
 print(f"成功抓取 {len(all_products)} 个商品")
 
 ponytail_products = [p for p in all_products if 'Ponytail' in p['title'] or ' pony' in p['title'].lower()]
-topper_products = [p for p in all_products if 'topper' in p['title'].lower()]
+topper_products = [p for p in all_products if 'topper' in p['title'].lower() and 'bangs' not in p['title'].lower()]
 extension_products = [p for p in all_products if ('Extension' in p['title'] or 'Extensions' in p['title']) and 'Pony' not in p['title']]
 
 results = {
@@ -70,7 +70,7 @@ with open('/workspace/hair_categories.json', 'w', encoding='utf-8') as f:
     json.dump(results, f, ensure_ascii=False, indent=2)
 
 print("\n" + "="*80)
-print("📊 各品类商品及品牌分布（重新分类）：")
+print("📊 各品类商品及品牌分布：")
 print("="*80)
 
 for name, products in results.items():
@@ -86,7 +86,7 @@ for name, products in results.items():
     if products:
         print("\n详细商品：")
         for p in products:
-            print(f"  #{p['rank']} | {p['brand']} | {p['asin']} | {p['price']} | {p['title'][:50]}...")
+            print(f"  #{p['rank']} | {p['brand']} | {p['asin']} | {p['price']} | {p['title']}")
 
 all_brands = set()
 for products in results.values():
