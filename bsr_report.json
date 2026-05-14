@@ -1,0 +1,184 @@
+{
+  "msg_type": "interactive",
+  "card": {
+    "header": {
+      "title": {
+        "tag": "plain_text",
+        "content": "📊 亚马逊假发类目BSR监控日报 2026-05-14"
+      },
+      "template": "purple"
+    },
+    "elements": [
+      {
+        "tag": "div",
+        "text": {
+          "tag": "lark_md",
+          "content": "**① 整体波动简报**"
+        }
+      },
+      {
+        "tag": "div",
+        "text": {
+          "tag": "lark_md",
+          "content": "- 🟢 排名无变化商品：**0** 个\n- 🔼 排名上升商品：**15** 个（其中上升≥5名：**8** 个）\n- 🔽 排名下降商品：**15** 个（其中下降≥5名：**8** 个）"
+        }
+      },
+      {
+        "tag": "hr"
+      },
+      {
+        "tag": "div",
+        "text": {
+          "tag": "lark_md",
+          "content": "**② 前10名稳定性情况**"
+        }
+      },
+      {
+        "tag": "div",
+        "text": {
+          "tag": "lark_md",
+          "content": " | 排名 | ASIN | 品牌 | 今日排名 | 昨日排名 | 变化 |\n |---|---|---|---|---|---|\n | 1 | `B095GFGRWS` | CJL HAIR | 1 | 8 | 🔼 +7名 |\n | 2 | `B0B5N3X457` | FESHFEN | 2 | 7 | 🔼 +5名 |\n | 3 | `B0D2ZZS8T1` | ORSUNCER | 3 | 10 | 🔼 +7名 |\n | 4 | `B0FBRVYMHV` | CJL HAIR | 4 | 5 | 🔼 +1名 |\n | 5 | `B0DPH7Q7BT` | GZVIS | 5 | 3 | 🔽 -2名 |\n | 6 | `B0B28HGKX3` | FESHFEN | 6 | 1 | 🔽 -5名 |\n | 7 | `B0BZ89DN84` | ALXNAN | 7 | 5 | 🔽 -2名 |\n | 8 | `B07SPM85CX` | KGBFASS | 8 | 11 | 🔼 +3名 |\n | 9 | `B07PZ3RLXQ` | TOFAFA | 9 | 16 | 🔼 +7名 |\n | 10 | `B07YQMJ991` | MORICA | 10 | 7 | 🔽 -3名 |"
+        }
+      },
+      {
+        "tag": "hr"
+      },
+      {
+        "tag": "div",
+        "text": {
+          "tag": "lark_md",
+          "content": "**③ 重点异动商品（排名变化≥±5名）**"
+        }
+      },
+      {
+        "tag": "div",
+        "text": {
+          "tag": "lark_md",
+          "content": "⚠️ **ORIGEN** | ASIN: `B0DK18NXPH` | 昨日排名：19 | 今日排名：11 | 变化：+8名 🔺**大幅上升**\n可能因素：价格下调、新增好评、活动推广"
+        }
+      },
+      {
+        "tag": "div",
+        "text": {
+          "tag": "lark_md",
+          "content": "⚠️ **BARSDAR** | ASIN: `B07PHQG1ZC` | 昨日排名：23 | 今日排名：15 | 变化：+8名 🔺**大幅上升**\n可能因素：价格下调、新增好评、活动推广"
+        }
+      },
+      {
+        "tag": "div",
+        "text": {
+          "tag": "lark_md",
+          "content": "⚠️ **CJL HAIR** | ASIN: `B095GFGRWS` | 昨日排名：8 | 今日排名：1 | 变化：+7名 🔺**大幅上升**\n可能因素：价格下调、新增好评、活动推广"
+        }
+      },
+      {
+        "tag": "div",
+        "text": {
+          "tag": "lark_md",
+          "content": "⚠️ **ORSUNCER** | ASIN: `B0D2ZZS8T1` | 昨日排名：10 | 今日排名：3 | 变化：+7名 🔺**大幅上升**\n可能因素：价格下调、新增好评、活动推广"
+        }
+      },
+      {
+        "tag": "div",
+        "text": {
+          "tag": "lark_md",
+          "content": "⚠️ **TOFAFA** | ASIN: `B07PZ3RLXQ` | 昨日排名：16 | 今日排名：9 | 变化：+7名 🔺**大幅上升**\n可能因素：价格下调、新增好评、活动推广"
+        }
+      },
+      {
+        "tag": "div",
+        "text": {
+          "tag": "lark_md",
+          "content": "⚠️ **CJL HAIR** | ASIN: `B0CCD4LTY7` | 昨日排名：18 | 今日排名：12 | 变化：+6名 🔺**大幅上升**\n可能因素：价格下调、新增好评、活动推广"
+        }
+      },
+      {
+        "tag": "div",
+        "text": {
+          "tag": "lark_md",
+          "content": "⚠️ **FESHFEN** | ASIN: `B0B5N3X457` | 昨日排名：7 | 今日排名：2 | 变化：+5名 🔺**大幅上升**\n可能因素：价格下调、新增好评、活动推广"
+        }
+      },
+      {
+        "tag": "div",
+        "text": {
+          "tag": "lark_md",
+          "content": "⚠️ **NAYOO** | ASIN: `B0B6VSGSZZ` | 昨日排名：27 | 今日排名：22 | 变化：+5名 🔺**大幅上升**\n可能因素：价格下调、新增好评、活动推广"
+        }
+      },
+      {
+        "tag": "div",
+        "text": {
+          "tag": "lark_md",
+          "content": "⚠️ **Unknown** | ASIN: `B0FJ5DNHS1` | 昨日排名：10 | 今日排名：17 | 变化：-7名 🔻**大幅下降**\n可能因素：差评增加、价格上调、失去BSR标记"
+        }
+      },
+      {
+        "tag": "div",
+        "text": {
+          "tag": "lark_md",
+          "content": "⚠️ **REECHO** | ASIN: `B0CP8WLY77` | 昨日排名：20 | 今日排名：27 | 变化：-7名 🔻**大幅下降**\n可能因素：差评增加、价格上调、失去BSR标记"
+        }
+      },
+      {
+        "tag": "div",
+        "text": {
+          "tag": "lark_md",
+          "content": "⚠️ **FESHFEN** | ASIN: `B0B28HGKX3` | 昨日排名：1 | 今日排名：6 | 变化：-5名 🔻**大幅下降**\n可能因素：差评增加、价格上调、失去BSR标记"
+        }
+      },
+      {
+        "tag": "div",
+        "text": {
+          "tag": "lark_md",
+          "content": "⚠️ **Unknown** | ASIN: `B0CS6BBNTS` | 昨日排名：9 | 今日排名：14 | 变化：-5名 🔻**大幅下降**\n可能因素：差评增加、价格上调、失去BSR标记"
+        }
+      },
+      {
+        "tag": "div",
+        "text": {
+          "tag": "lark_md",
+          "content": "⚠️ **Unknown** | ASIN: `B0C8MWKZTT` | 昨日排名：11 | 今日排名：16 | 变化：-5名 🔻**大幅下降**\n可能因素：差评增加、价格上调、失去BSR标记"
+        }
+      },
+      {
+        "tag": "div",
+        "text": {
+          "tag": "lark_md",
+          "content": "⚠️ **SOFEIYAN** | ASIN: `B07SBJ4GSY` | 昨日排名：14 | 今日排名：19 | 变化：-5名 🔻**大幅下降**\n可能因素：差评增加、价格上调、失去BSR标记"
+        }
+      },
+      {
+        "tag": "div",
+        "text": {
+          "tag": "lark_md",
+          "content": "⚠️ **SARLA** | ASIN: `B017VQOF2O` | 昨日排名：19 | 今日排名：24 | 变化：-5名 🔻**大幅下降**\n可能因素：差评增加、价格上调、失去BSR标记"
+        }
+      },
+      {
+        "tag": "div",
+        "text": {
+          "tag": "lark_md",
+          "content": "⚠️ **Unknown** | ASIN: `B0DBCZDFL3` | 昨日排名：21 | 今日排名：26 | 变化：-5名 🔻**大幅下降**\n可能因素：差评增加、价格上调、失去BSR标记"
+        }
+      },
+      {
+        "tag": "hr"
+      },
+      {
+        "tag": "div",
+        "text": {
+          "tag": "lark_md",
+          "content": "**💡 关键结论**\n今日BSR前30名中，15个商品排名上升，15个下降。需重点关注：CJL HAIR, FESHFEN, ORSUNCER 等品牌排名大幅上升，可能对咱们的排名造成压力。机会点：FESHFEN, Unknown 等品牌排名下滑，可关注其市场份额。"
+        }
+      },
+      {
+        "tag": "div",
+        "text": {
+          "tag": "lark_md",
+          "content": "\n---\n*数据来源：Amazon BSR | 抓取时间：2026-05-14 07:48*"
+        }
+      }
+    ]
+  }
+}
