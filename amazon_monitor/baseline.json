@@ -1,0 +1,41 @@
+{
+  "data": {
+    "2122": {
+      "asin": "B0D62RT6DP",
+      "rating": 4.6,
+      "total_reviews": 200,
+      "five_star": 0,
+      "four_star": 0,
+      "three_star": 0,
+      "two_star": 0,
+      "one_star": 0,
+      "recent_reviews": [],
+      "fetch_time": "2026-05-14 09:07:22"
+    },
+    "2132": {
+      "asin": "B0GKF6JRDX",
+      "rating": 5.0,
+      "total_reviews": 13,
+      "five_star": 0,
+      "four_star": 0,
+      "three_star": 0,
+      "two_star": 0,
+      "one_star": 0,
+      "recent_reviews": [],
+      "fetch_time": "2026-05-14 09:07:26"
+    },
+    "xfw": {
+      "asin": "B0FL7DLB1L",
+      "rating": 3.9,
+      "total_reviews": 96,
+      "five_star": 0,
+      "four_star": 0,
+      "three_star": 0,
+      "two_star": 0,
+      "one_star": 0,
+      "recent_reviews": [],
+      "fetch_time": "2026-05-14 09:07:32"
+    }
+  },
+  "saved_at": "2026-05-14 09:07:47"
+}
