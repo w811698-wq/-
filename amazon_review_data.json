@@ -1,0 +1,23 @@
+{
+  "2122": {
+    "rating": 4.6,
+    "total_reviews": 208,
+    "positive_reviews": 162,
+    "negative_reviews": 24,
+    "timestamp": "2026-05-15 09:46:50"
+  },
+  "2132": {
+    "rating": 5.0,
+    "total_reviews": 12,
+    "positive_reviews": 11,
+    "negative_reviews": 0,
+    "timestamp": "2026-05-15 09:46:53"
+  },
+  "xfw": {
+    "rating": 3.9,
+    "total_reviews": 98,
+    "positive_reviews": 63,
+    "negative_reviews": 19,
+    "timestamp": "2026-05-15 09:46:56"
+  }
+}
