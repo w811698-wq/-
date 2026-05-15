@@ -35,6 +35,13 @@ PRODUCTS = {
         "url": "https://www.amazon.com/Isaic-Thinning-Synthetic-Extensions-Adjustable/dp/B0FL7DLB1L",
         "initial_reviews": 96,
         "initial_rating": 3.9
+    },
+    "2113": {
+        "name": "Claw Clip马尾扩展",
+        "asin": "B0DK14TGK9",
+        "url": "https://www.amazon.com/dp/B0DK14TGK9",
+        "initial_reviews": 246,
+        "initial_rating": 4.4
     }
 }
 
