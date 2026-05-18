@@ -1,22 +1,22 @@
 {
   "2122": {
-    "reviews": 200,
-    "rating": 4.6,
-    "fetch_time": "2026-05-15 09:53:37"
+    "reviews": 0,
+    "rating": 0.0,
+    "fetch_time": "2026-05-18 02:30:00"
   },
   "2132": {
-    "reviews": 13,
-    "rating": 5.0,
-    "fetch_time": "2026-05-15 09:53:38"
+    "reviews": 0,
+    "rating": 0.0,
+    "fetch_time": "2026-05-18 02:30:00"
   },
   "xfw": {
-    "reviews": 96,
+    "reviews": 97,
     "rating": 3.9,
-    "fetch_time": "2026-05-15 09:53:39"
+    "fetch_time": "2026-05-18 02:30:00"
   },
   "2113": {
-    "reviews": 246,
-    "rating": 4.4,
-    "fetch_time": "2026-05-15 09:53:39"
+    "reviews": 29,
+    "rating": 5.0,
+    "fetch_time": "2026-05-18 02:30:00"
   }
 }

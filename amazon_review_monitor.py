@@ -19,29 +19,29 @@ PRODUCTS = {
         "name": "Drawstring马尾扩展",
         "asin": "B0D62RT6DP",
         "url": "https://www.amazon.com/Isaic-Extension-Ponytails-Drawstring-Extensions/dp/B0D62RT6DP",
-        "initial_reviews": 200,
-        "initial_rating": 4.6
+        "initial_reviews": 0,
+        "initial_rating": 0.0
     },
     "2132": {
-        "name": "Voluminous卷发马尾扩展",
-        "asin": "B0GKF6JRDX",
-        "url": "https://www.amazon.com/Isaic-Extension-Voluminous-Synthetic-Hairpiece/dp/B0GKF6JRDX",
-        "initial_reviews": 13,
-        "initial_rating": 5.0
+        "name": "Isaic马尾扩展",
+        "asin": "B0D62RT6DP",
+        "url": "https://www.amazon.com/Isaic-Extension-Ponytails-Drawstring-Extensions/dp/B0D62RT6DP",
+        "initial_reviews": 0,
+        "initial_rating": 0.0
     },
     "xfw": {
         "name": "Thinning头顶假发扩展",
         "asin": "B0FL7DLB1L",
         "url": "https://www.amazon.com/Isaic-Thinning-Synthetic-Extensions-Adjustable/dp/B0FL7DLB1L",
-        "initial_reviews": 96,
-        "initial_rating": 3.9
+        "initial_reviews": 0,
+        "initial_rating": 0.0
     },
     "2113": {
-        "name": "Claw Clip马尾扩展",
-        "asin": "B0DK14TGK9",
-        "url": "https://www.amazon.com/dp/B0DK14TGK9",
-        "initial_reviews": 246,
-        "initial_rating": 4.4
+        "name": "Isaic Hairpiece扩展",
+        "asin": "B0F1T3BRHG",
+        "url": "https://www.amazon.com/Isaic-Extension-Extensions-Synthetic-Hairpiece/dp/B0F1T3BRHG",
+        "initial_reviews": 0,
+        "initial_rating": 0.0
     }
 }
 
@@ -64,11 +64,27 @@ def save_current_data(data):
 
 def get_reviews_count_and_rating(html_content):
     """从HTML内容中提取评论数和评分"""
-    reviews_match = re.search(r'([\d,]+)\s*(?:customer\s+reviews|ratings)', html_content, re.IGNORECASE)
-    rating_match = re.search(r'([\d.]+)\s*out\s*of\s*5\s*stars', html_content, re.IGNORECASE)
+    # 尝试多种模式匹配
+    # 模式1: "(XXX) ratings"
+    reviews_patterns = [
+        r'(\d{1,3}(?:,\d{3})*)\s*ratings',
+        r'(\d{1,3}(?:,\d{3})*)\s*customer\s+reviews',
+        r'(\d{1,3}(?:,\d{3})*)\s*global\s+reviews',
+        r'(\d{1,3}(?:,\d{3})*)\s*reviews'
+    ]
     
-    reviews = int(re.sub(r'[,]', '', reviews_match.group(1))) if reviews_match else None
-    rating = float(rating_match.group(1)) if rating_match else None
+    reviews = None
+    for pattern in reviews_patterns:
+        match = re.search(pattern, html_content, re.IGNORECASE)
+        if match:
+            reviews = int(re.sub(r'[,]', '', match.group(1)))
+            break
+    
+    # 匹配评分: "X.X out of 5 stars"
+    rating = None
+    rating_match = re.search(r'([\d.]+)\s*out\s*of\s*5\s*stars', html_content, re.IGNORECASE)
+    if rating_match:
+        rating = float(rating_match.group(1))
     
     return reviews, rating
 
