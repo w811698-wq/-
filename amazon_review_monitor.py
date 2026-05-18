@@ -23,9 +23,9 @@ PRODUCTS = {
         "initial_rating": 0.0
     },
     "2132": {
-        "name": "Isaic马尾扩展",
-        "asin": "B0D62RT6DP",
-        "url": "https://www.amazon.com/Isaic-Extension-Ponytails-Drawstring-Extensions/dp/B0D62RT6DP",
+        "name": "Voluminous卷发马尾扩展",
+        "asin": "B0GKF6JRDX",
+        "url": "https://www.amazon.com/Isaic-Extension-Voluminous-Synthetic-Hairpiece/dp/B0GKF6JRDX",
         "initial_reviews": 0,
         "initial_rating": 0.0
     },
