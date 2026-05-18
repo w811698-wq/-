@@ -32,156 +32,146 @@ HEADERS = {
     'Upgrade-Insecure-Requests': '1'
 }
 
-def generate_mock_data():
-    mock_data = {
-        'Ponytail Extension': [
-            {'asin': 'B08X1X1X1X1', 'rank': 1, 'title': 'Synthetic Ponytail Extension - 18 Inch Straight', 'brand': 'HairBeauty', 'price': '$19.99', 'has_coupon': True, 'has_deal': False, 'has_lightning_deal': False, 'scrape_time': datetime.now().isoformat()},
-            {'asin': 'B08X2X2X2X2', 'rank': 2, 'title': 'Clip-In Ponytail Extension - 24 Inch Wavy', 'brand': 'LuxuryHair', 'price': '$29.99', 'has_coupon': False, 'has_deal': True, 'has_lightning_deal': False, 'scrape_time': datetime.now().isoformat()},
-            {'asin': 'B08X3X3X3X3', 'rank': 3, 'title': 'Wrap Around Ponytail - 20 Inch Curly', 'brand': 'HairFashion', 'price': '$24.99', 'has_coupon': False, 'has_deal': False, 'has_lightning_deal': True, 'scrape_time': datetime.now().isoformat()},
-            {'asin': 'B08X4X4X4X4', 'rank': 8, 'title': 'Drawstring Ponytail - 16 Inch Straight', 'brand': 'BeautyPlus', 'price': '$15.99', 'has_coupon': False, 'has_deal': False, 'has_lightning_deal': False, 'scrape_time': datetime.now().isoformat()},
-            {'asin': 'B08X5X5X5X5', 'rank': 15, 'title': 'Ponytail Extension with Comb - 22 Inch', 'brand': 'StyleHair', 'price': '$22.99', 'has_coupon': True, 'has_deal': False, 'has_lightning_deal': False, 'scrape_time': datetime.now().isoformat()},
-            {'asin': 'B08X6X6X6X6', 'rank': 20, 'title': 'High Ponytail Extension - 14 Inch', 'brand': 'HairPro', 'price': '$18.99', 'has_coupon': False, 'has_deal': False, 'has_lightning_deal': False, 'scrape_time': datetime.now().isoformat()},
-            {'asin': 'B08X7X7X7X7', 'rank': 25, 'title': 'Ponytail Extension Thick - 26 Inch', 'brand': 'FullHair', 'price': '$34.99', 'has_coupon': False, 'has_deal': True, 'has_lightning_deal': False, 'scrape_time': datetime.now().isoformat()},
-            {'asin': 'B08X8X8X8X8', 'rank': 30, 'title': 'Ponytail Hairpiece - 12 Inch Short', 'brand': 'MiniHair', 'price': '$12.99', 'has_coupon': False, 'has_deal': False, 'has_lightning_deal': False, 'scrape_time': datetime.now().isoformat()},
-        ],
-        'Hair Topper': [
-            {'asin': 'B09Y1Y1Y1Y1', 'rank': 1, 'title': 'Hair Topper for Women - 18x18cm Base', 'brand': 'TopperPro', 'price': '$49.99', 'has_coupon': True, 'has_deal': False, 'has_lightning_deal': False, 'scrape_time': datetime.now().isoformat()},
-            {'asin': 'B09Y2Y2Y2Y2', 'rank': 5, 'title': 'Clip-In Hair Topper - Human Hair', 'brand': 'RealHair', 'price': '$79.99', 'has_coupon': False, 'has_deal': True, 'has_lightning_deal': False, 'scrape_time': datetime.now().isoformat()},
-            {'asin': 'B09Y3Y3Y3Y3', 'rank': 6, 'title': 'Synthetic Hair Topper - Blonde', 'brand': 'BlondeBeauty', 'price': '$39.99', 'has_coupon': False, 'has_deal': False, 'has_lightning_deal': False, 'scrape_time': datetime.now().isoformat()},
-            {'asin': 'B09Y4Y4Y4Y4', 'rank': 12, 'title': 'Hair Topper with Bangs', 'brand': 'BangsHair', 'price': '$54.99', 'has_coupon': False, 'has_deal': False, 'has_lightning_deal': False, 'scrape_time': datetime.now().isoformat()},
-            {'asin': 'B09Y5Y5Y5Y5', 'rank': 18, 'title': 'Large Base Hair Topper - 22x22cm', 'brand': 'FullCoverage', 'price': '$69.99', 'has_coupon': True, 'has_deal': False, 'has_lightning_deal': False, 'scrape_time': datetime.now().isoformat()},
-            {'asin': 'B09Y6Y6Y6Y6', 'rank': 22, 'title': 'Thin Hair Topper - Lightweight', 'brand': 'LightHair', 'price': '$44.99', 'has_coupon': False, 'has_deal': False, 'has_lightning_deal': False, 'scrape_time': datetime.now().isoformat()},
-            {'asin': 'B09Y7Y7Y7Y7', 'rank': 28, 'title': 'Hair Topper for Men', 'brand': 'MensHair', 'price': '$35.99', 'has_coupon': False, 'has_deal': False, 'has_lightning_deal': False, 'scrape_time': datetime.now().isoformat()},
-            {'asin': 'B09Y8Y8Y8Y8', 'rank': 35, 'title': 'Ombre Hair Topper - Two Tone', 'brand': 'OmbreStyle', 'price': '$59.99', 'has_coupon': False, 'has_deal': True, 'has_lightning_deal': False, 'scrape_time': datetime.now().isoformat()},
-        ],
-        'Hair Extensions': [
-            {'asin': 'B0AZ1Z1Z1Z1', 'rank': 1, 'title': 'Clip-In Hair Extensions - 20 Inch', 'brand': 'ExtensionPro', 'price': '$39.99', 'has_coupon': False, 'has_deal': True, 'has_lightning_deal': False, 'scrape_time': datetime.now().isoformat()},
-            {'asin': 'B0AZ2Z2Z2Z2', 'rank': 2, 'title': 'Human Hair Extensions - Remy Hair', 'brand': 'RemyBeauty', 'price': '$89.99', 'has_coupon': True, 'has_deal': False, 'has_lightning_deal': False, 'scrape_time': datetime.now().isoformat()},
-            {'asin': 'B0AZ3Z3Z3Z3', 'rank': 3, 'title': 'Synthetic Hair Extensions - 24 Inch', 'brand': 'SynthHair', 'price': '$29.99', 'has_coupon': False, 'has_deal': False, 'has_lightning_deal': True, 'scrape_time': datetime.now().isoformat()},
-            {'asin': 'B0AZ4Z4Z4Z4', 'rank': 10, 'title': 'Tape-In Hair Extensions', 'brand': 'TapeBeauty', 'price': '$59.99', 'has_coupon': False, 'has_deal': False, 'has_lightning_deal': False, 'scrape_time': datetime.now().isoformat()},
-            {'asin': 'B0AZ5Z5Z5Z5', 'rank': 14, 'title': 'Microbead Hair Extensions', 'brand': 'MicroPro', 'price': '$69.99', 'has_coupon': True, 'has_deal': False, 'has_lightning_deal': False, 'scrape_time': datetime.now().isoformat()},
-            {'asin': 'B0AZ6Z6Z6Z6', 'rank': 19, 'title': 'Weft Hair Extensions', 'brand': 'WeftBeauty', 'price': '$49.99', 'has_coupon': False, 'has_deal': False, 'has_lightning_deal': False, 'scrape_time': datetime.now().isoformat()},
-            {'asin': 'B0AZ7Z7Z7Z7', 'rank': 26, 'title': 'Halo Hair Extensions', 'brand': 'HaloStyle', 'price': '$54.99', 'has_coupon': False, 'has_deal': True, 'has_lightning_deal': False, 'scrape_time': datetime.now().isoformat()},
-            {'asin': 'B0AZ8Z8Z8Z8', 'rank': 32, 'title': 'Clip-In Hair Extensions - Thick', 'brand': 'ThickHair', 'price': '$44.99', 'has_coupon': False, 'has_deal': False, 'has_lightning_deal': False, 'scrape_time': datetime.now().isoformat()},
-        ]
-    }
-    return mock_data
+EXTERNAL_API_URL = os.getenv('AMAZON_DATA_API_URL', '')
+EXTERNAL_API_KEY = os.getenv('AMAZON_DATA_API_KEY', '')
 
-def scrape_bsr_data(category_url):
-    try:
-        response = requests.get(category_url, headers=HEADERS, timeout=30)
-        response.raise_for_status()
-        soup = BeautifulSoup(response.content, 'html.parser')
-        
-        products = []
-        
-        items = soup.find_all('div', {'data-asin': True})
-        if not items:
-            items = soup.select('[data-asin]')
-        if not items:
-            items = soup.find_all('div', class_='zg-item-immersion')
-        if not items:
-            items = soup.find_all('div', class_='p13n-sc-uncoverable-faceout')
-        if not items:
-            items = soup.find_all('div', class_='a-section a-spacing-none')
-        
-        for item in items[:50]:
-            asin = item.get('data-asin')
-            if not asin:
+def scrape_bsr_data(category_url, retries=3):
+    for attempt in range(retries):
+        try:
+            session = requests.Session()
+            response = session.get(category_url, headers=HEADERS, timeout=30)
+            response.raise_for_status()
+            soup = BeautifulSoup(response.content, 'html.parser')
+            
+            products = []
+            
+            items = soup.find_all('div', {'data-asin': True})
+            if not items:
+                items = soup.find_all('li', {'data-asin': True})
+            if not items:
+                items = soup.select('li.zg-item-immersion')
+            if not items:
+                items = soup.select('.zg-item')
+            
+            if not items:
+                print(f"  No items found on attempt {attempt + 1}")
                 continue
+            
+            for item in items[:50]:
+                asin = item.get('data-asin')
+                if not asin:
+                    continue
                 
-            rank = None
-            rank_elem = item.find('span', class_='zg-bdg-text')
-            if not rank_elem:
-                rank_elem = item.find('span', class_='a-badge-text')
-            if not rank_elem:
-                rank_elem = item.find('span', class_='zg-rank')
-            if rank_elem:
-                rank_text = rank_elem.get_text(strip=True).replace('#', '')
-                try:
-                    rank = int(rank_text)
-                except ValueError:
-                    pass
+                rank = None
+                rank_elem = item.find('span', class_='zg-bdg-text')
+                if not rank_elem:
+                    rank_elem = item.find('span', class_='a-badge-text')
+                if not rank_elem:
+                    rank_elem = item.find('span', class_='zg-rank')
+                if not rank_elem:
+                    rank_text = item.get('data-rank')
+                    if rank_text:
+                        try:
+                            rank = int(rank_text)
+                        except ValueError:
+                            pass
+                if rank_elem:
+                    rank_text = rank_elem.get_text(strip=True).replace('#', '')
+                    try:
+                        rank = int(rank_text)
+                    except ValueError:
+                        pass
+                
+                title = None
+                title_elem = item.find('span', class_='zg-item')
+                if not title_elem:
+                    title_elem = item.find('span', class_='a-size-base a-color-base')
+                if not title_elem:
+                    title_elem = item.find('div', class_='p13n-sc-truncate')
+                if not title_elem:
+                    title_elem = item.find('h2', class_='a-size-mini')
+                if not title_elem:
+                    title_elem = item.find('a', class_='a-size-small')
+                if title_elem:
+                    title = title_elem.get_text(strip=True)
+                
+                brand = None
+                brand_elem = item.find('span', class_='a-size-small a-color-secondary')
+                if not brand_elem:
+                    brand_elem = item.find('div', class_='a-row a-size-small')
+                if not brand_elem:
+                    brand_elem = item.find('span', class_='a-color-secondary')
+                if brand_elem:
+                    brand = brand_elem.get_text(strip=True)
+                
+                price = None
+                price_elem = item.find('span', class_='p13n-sc-price')
+                if not price_elem:
+                    price_elem = item.find('span', class_='a-price-whole')
+                if not price_elem:
+                    price_elem = item.find('span', class_='a-color-price')
+                if price_elem:
+                    price = price_elem.get_text(strip=True)
+                
+                has_coupon = 'coupon' in str(item).lower() or 'zg-coupon' in str(item)
+                has_deal = 'deal' in str(item).lower() and ('a-badge' in str(item) or 'deal' in str(item).lower())
+                has_lightning_deal = 'lightning' in str(item).lower()
+                
+                products.append({
+                    'asin': asin,
+                    'rank': rank,
+                    'title': title,
+                    'brand': brand,
+                    'price': price,
+                    'has_coupon': has_coupon,
+                    'has_deal': has_deal,
+                    'has_lightning_deal': has_lightning_deal,
+                    'scrape_time': datetime.now().isoformat()
+                })
             
-            title = None
-            title_elem = item.find('span', class_='zg-item')
-            if not title_elem:
-                title_elem = item.find('span', class_='a-size-base a-color-base')
-            if not title_elem:
-                title_elem = item.find('div', class_='p13n-sc-truncate')
-            if not title_elem:
-                title_elem = item.find('h2', class_='a-size-mini a-spacing-none a-color-base s-line-clamp-2')
-            if title_elem:
-                title = title_elem.get_text(strip=True)
+            if products:
+                return products
             
-            brand = None
-            brand_elem = item.find('span', class_='a-size-small a-color-secondary')
-            if not brand_elem:
-                brand_elem = item.find('span', class_='a-size-small')
-            if not brand_elem:
-                brand_elem = item.find('div', class_='a-row a-size-small')
-            if brand_elem:
-                brand = brand_elem.get_text(strip=True)
-            
-            price = None
-            price_elem = item.find('span', class_='p13n-sc-price')
-            if not price_elem:
-                price_elem = item.find('span', class_='a-price')
-            if not price_elem:
-                price_elem = item.find('span', class_='a-size-base a-color-price')
-            if price_elem:
-                price = price_elem.get_text(strip=True)
-            
-            has_coupon = False
-            coupon_elem = item.find('span', class_='zg-coupon')
-            if not coupon_elem:
-                coupon_elem = item.find('span', class_='a-badge-coupon')
-            if coupon_elem:
-                has_coupon = True
-            
-            has_deal = False
-            deal_elem = item.find('span', class_='a-badge-text')
-            if deal_elem and 'Deal' in deal_elem.get_text(strip=True):
-                has_deal = True
-            
-            has_lightning_deal = False
-            lightning_elem = item.find('span', class_='a-badge-lightning')
-            if lightning_elem:
-                has_lightning_deal = True
-            
-            products.append({
-                'asin': asin,
-                'rank': rank,
-                'title': title,
-                'brand': brand,
-                'price': price,
-                'has_coupon': has_coupon,
-                'has_deal': has_deal,
-                'has_lightning_deal': has_lightning_deal,
-                'scrape_time': datetime.now().isoformat()
-            })
-        
-        return products
+        except Exception as e:
+            print(f"Error scraping {category_url} on attempt {attempt + 1}: {str(e)}")
+            continue
     
-    except Exception as e:
-        print(f"Error scraping {category_url}: {str(e)}")
-        return []
+    return []
 
-def get_all_categories_data(use_mock=False):
-    if use_mock:
-        print("Using mock data for testing...")
-        return generate_mock_data()
+def fetch_from_external_api(category_key):
+    if not EXTERNAL_API_URL:
+        return None
     
+    try:
+        headers = {'Authorization': f'Bearer {EXTERNAL_API_KEY}'} if EXTERNAL_API_KEY else {}
+        params = {'category': category_key}
+        response = requests.get(EXTERNAL_API_URL, headers=headers, params=params, timeout=30)
+        response.raise_for_status()
+        return response.json()
+    except Exception as e:
+        print(f"External API error for {category_key}: {str(e)}")
+        return None
+
+def get_all_categories_data():
     all_data = {}
+    
     for category_name, category_url in CATEGORIES.items():
-        print(f"Scraping {category_name}...")
+        print(f"Fetching {category_name}...")
+        
+        external_data = fetch_from_external_api(category_name)
+        if external_data:
+            all_data[category_name] = external_data
+            print(f"Got {len(external_data)} products from external API for {category_name}")
+            continue
+        
         data = scrape_bsr_data(category_url)
         all_data[category_name] = data
-        print(f"Found {len(data)} products for {category_name}")
+        print(f"Scraped {len(data)} products from Amazon for {category_name}")
     
     if all([len(data) == 0 for data in all_data.values()]):
-        print("No data scraped from Amazon, using mock data instead...")
-        return generate_mock_data()
+        print("WARNING: No data fetched. Please configure external API or provide manual data.")
+        print("Add AMAZON_DATA_API_URL and AMAZON_DATA_API_KEY to .env file")
+        return None
     
     return all_data
 
@@ -204,47 +194,12 @@ def get_last_week_data():
     filename = f'bsr_data_{last_week_date}.json'
     return load_data(filename)
 
-def generate_last_week_mock_data():
-    mock_data = {
-        'Ponytail Extension': [
-            {'asin': 'B08X1X1X1X1', 'rank': 1, 'title': 'Synthetic Ponytail Extension - 18 Inch Straight', 'brand': 'HairBeauty', 'price': '$19.99', 'has_coupon': False, 'has_deal': False, 'has_lightning_deal': False},
-            {'asin': 'B08X2X2X2X2', 'rank': 3, 'title': 'Clip-In Ponytail Extension - 24 Inch Wavy', 'brand': 'LuxuryHair', 'price': '$29.99', 'has_coupon': False, 'has_deal': False, 'has_lightning_deal': False},
-            {'asin': 'B08X3X3X3X3', 'rank': 10, 'title': 'Wrap Around Ponytail - 20 Inch Curly', 'brand': 'HairFashion', 'price': '$24.99', 'has_coupon': False, 'has_deal': False, 'has_lightning_deal': False},
-            {'asin': 'B08X4X4X4X4', 'rank': 12, 'title': 'Drawstring Ponytail - 16 Inch Straight', 'brand': 'BeautyPlus', 'price': '$15.99', 'has_coupon': False, 'has_deal': False, 'has_lightning_deal': False},
-            {'asin': 'B08X5X5X5X5', 'rank': 15, 'title': 'Ponytail Extension with Comb - 22 Inch', 'brand': 'StyleHair', 'price': '$22.99', 'has_coupon': False, 'has_deal': False, 'has_lightning_deal': False},
-            {'asin': 'B08X6X6X6X6', 'rank': 25, 'title': 'High Ponytail Extension - 14 Inch', 'brand': 'HairPro', 'price': '$18.99', 'has_coupon': False, 'has_deal': False, 'has_lightning_deal': False},
-            {'asin': 'B08X7X7X7X7', 'rank': 30, 'title': 'Ponytail Extension Thick - 26 Inch', 'brand': 'FullHair', 'price': '$34.99', 'has_coupon': False, 'has_deal': False, 'has_lightning_deal': False},
-            {'asin': 'B08X8X8X8X8', 'rank': 28, 'title': 'Ponytail Hairpiece - 12 Inch Short', 'brand': 'MiniHair', 'price': '$12.99', 'has_coupon': False, 'has_deal': False, 'has_lightning_deal': False},
-        ],
-        'Hair Topper': [
-            {'asin': 'B09Y1Y1Y1Y1', 'rank': 2, 'title': 'Hair Topper for Women - 18x18cm Base', 'brand': 'TopperPro', 'price': '$49.99', 'has_coupon': False, 'has_deal': False, 'has_lightning_deal': False},
-            {'asin': 'B09Y2Y2Y2Y2', 'rank': 8, 'title': 'Clip-In Hair Topper - Human Hair', 'brand': 'RealHair', 'price': '$79.99', 'has_coupon': False, 'has_deal': False, 'has_lightning_deal': False},
-            {'asin': 'B09Y3Y3Y3Y3', 'rank': 6, 'title': 'Synthetic Hair Topper - Blonde', 'brand': 'BlondeBeauty', 'price': '$39.99', 'has_coupon': False, 'has_deal': False, 'has_lightning_deal': False},
-            {'asin': 'B09Y4Y4Y4Y4', 'rank': 12, 'title': 'Hair Topper with Bangs', 'brand': 'BangsHair', 'price': '$54.99', 'has_coupon': False, 'has_deal': False, 'has_lightning_deal': False},
-            {'asin': 'B09Y5Y5Y5Y5', 'rank': 18, 'title': 'Large Base Hair Topper - 22x22cm', 'brand': 'FullCoverage', 'price': '$69.99', 'has_coupon': False, 'has_deal': False, 'has_lightning_deal': False},
-            {'asin': 'B09Y6Y6Y6Y6', 'rank': 17, 'title': 'Thin Hair Topper - Lightweight', 'brand': 'LightHair', 'price': '$44.99', 'has_coupon': False, 'has_deal': False, 'has_lightning_deal': False},
-            {'asin': 'B09Y7Y7Y7Y7', 'rank': 28, 'title': 'Hair Topper for Men', 'brand': 'MensHair', 'price': '$35.99', 'has_coupon': False, 'has_deal': False, 'has_lightning_deal': False},
-            {'asin': 'B09Y8Y8Y8Y8', 'rank': 30, 'title': 'Ombre Hair Topper - Two Tone', 'brand': 'OmbreStyle', 'price': '$59.99', 'has_coupon': False, 'has_deal': False, 'has_lightning_deal': False},
-        ],
-        'Hair Extensions': [
-            {'asin': 'B0AZ1Z1Z1Z1', 'rank': 5, 'title': 'Clip-In Hair Extensions - 20 Inch', 'brand': 'ExtensionPro', 'price': '$39.99', 'has_coupon': False, 'has_deal': False, 'has_lightning_deal': False},
-            {'asin': 'B0AZ2Z2Z2Z2', 'rank': 2, 'title': 'Human Hair Extensions - Remy Hair', 'brand': 'RemyBeauty', 'price': '$89.99', 'has_coupon': False, 'has_deal': False, 'has_lightning_deal': False},
-            {'asin': 'B0AZ3Z3Z3Z3', 'rank': 8, 'title': 'Synthetic Hair Extensions - 24 Inch', 'brand': 'SynthHair', 'price': '$29.99', 'has_coupon': False, 'has_deal': False, 'has_lightning_deal': False},
-            {'asin': 'B0AZ4Z4Z4Z4', 'rank': 10, 'title': 'Tape-In Hair Extensions', 'brand': 'TapeBeauty', 'price': '$59.99', 'has_coupon': False, 'has_deal': False, 'has_lightning_deal': False},
-            {'asin': 'B0AZ5Z5Z5Z5', 'rank': 9, 'title': 'Microbead Hair Extensions', 'brand': 'MicroPro', 'price': '$69.99', 'has_coupon': False, 'has_deal': False, 'has_lightning_deal': False},
-            {'asin': 'B0AZ6Z6Z6Z6', 'rank': 19, 'title': 'Weft Hair Extensions', 'brand': 'WeftBeauty', 'price': '$49.99', 'has_coupon': False, 'has_deal': False, 'has_lightning_deal': False},
-            {'asin': 'B0AZ7Z7Z7Z7', 'rank': 22, 'title': 'Halo Hair Extensions', 'brand': 'HaloStyle', 'price': '$54.99', 'has_coupon': False, 'has_deal': False, 'has_lightning_deal': False},
-            {'asin': 'B0AZ8Z8Z8Z8', 'rank': 25, 'title': 'Clip-In Hair Extensions - Thick', 'brand': 'ThickHair', 'price': '$44.99', 'has_coupon': False, 'has_deal': False, 'has_lightning_deal': False},
-        ]
-    }
-    return mock_data
-
 def compare_with_last_week(current_data, last_week_data):
     comparison = {}
     
     for category, current_products in current_data.items():
         comparison[category] = []
-        last_week_products = last_week_data.get(category, {}) if last_week_data else {}
+        last_week_products = last_week_data.get(category, []) if last_week_data else []
         
         last_week_dict = {p['asin']: p for p in last_week_products}
         
@@ -382,10 +337,14 @@ def send_to_feishu(message):
         print(f"飞书消息发送失败: {str(e)}")
         return False
 
-def main(use_mock=False):
+def main():
     print("开始执行亚马逊BSR排名周报任务...")
     
-    current_data = get_all_categories_data(use_mock=use_mock)
+    current_data = get_all_categories_data()
+    
+    if current_data is None:
+        print("错误：无法获取任何数据。请配置外部API或手动提供数据。")
+        return
     
     today_str = datetime.now().strftime('%Y%m%d')
     save_data(current_data, f'bsr_data_{today_str}.json')
@@ -393,8 +352,9 @@ def main(use_mock=False):
     last_week_data = get_last_week_data()
     
     if not last_week_data:
-        print("未找到上周数据，生成模拟上周数据...")
-        last_week_data = generate_last_week_mock_data()
+        print("错误：未找到上周数据，无法进行对比分析。")
+        print("请确保data目录中存在上周的数据文件（格式：bsr_data_YYYYMMDD.json）")
+        return
     
     comparison_data = compare_with_last_week(current_data, last_week_data)
     
@@ -410,4 +370,4 @@ def main(use_mock=False):
     print("任务完成")
 
 if __name__ == '__main__':
-    main(use_mock=True)
+    main()
