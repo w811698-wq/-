@@ -1,0 +1,272 @@
+{
+  "Ponytail Extension": [
+    {
+      "asin": "B08X1X1X1X1",
+      "rank": 1,
+      "title": "Synthetic Ponytail Extension - 18 Inch Straight",
+      "brand": "HairBeauty",
+      "price": "$19.99",
+      "has_coupon": true,
+      "has_deal": false,
+      "has_lightning_deal": false,
+      "scrape_time": "2026-05-18T02:24:27.823381"
+    },
+    {
+      "asin": "B08X2X2X2X2",
+      "rank": 2,
+      "title": "Clip-In Ponytail Extension - 24 Inch Wavy",
+      "brand": "LuxuryHair",
+      "price": "$29.99",
+      "has_coupon": false,
+      "has_deal": true,
+      "has_lightning_deal": false,
+      "scrape_time": "2026-05-18T02:24:27.823394"
+    },
+    {
+      "asin": "B08X3X3X3X3",
+      "rank": 3,
+      "title": "Wrap Around Ponytail - 20 Inch Curly",
+      "brand": "HairFashion",
+      "price": "$24.99",
+      "has_coupon": false,
+      "has_deal": false,
+      "has_lightning_deal": true,
+      "scrape_time": "2026-05-18T02:24:27.823396"
+    },
+    {
+      "asin": "B08X4X4X4X4",
+      "rank": 8,
+      "title": "Drawstring Ponytail - 16 Inch Straight",
+      "brand": "BeautyPlus",
+      "price": "$15.99",
+      "has_coupon": false,
+      "has_deal": false,
+      "has_lightning_deal": false,
+      "scrape_time": "2026-05-18T02:24:27.823398"
+    },
+    {
+      "asin": "B08X5X5X5X5",
+      "rank": 15,
+      "title": "Ponytail Extension with Comb - 22 Inch",
+      "brand": "StyleHair",
+      "price": "$22.99",
+      "has_coupon": true,
+      "has_deal": false,
+      "has_lightning_deal": false,
+      "scrape_time": "2026-05-18T02:24:27.823399"
+    },
+    {
+      "asin": "B08X6X6X6X6",
+      "rank": 20,
+      "title": "High Ponytail Extension - 14 Inch",
+      "brand": "HairPro",
+      "price": "$18.99",
+      "has_coupon": false,
+      "has_deal": false,
+      "has_lightning_deal": false,
+      "scrape_time": "2026-05-18T02:24:27.823400"
+    },
+    {
+      "asin": "B08X7X7X7X7",
+      "rank": 25,
+      "title": "Ponytail Extension Thick - 26 Inch",
+      "brand": "FullHair",
+      "price": "$34.99",
+      "has_coupon": false,
+      "has_deal": true,
+      "has_lightning_deal": false,
+      "scrape_time": "2026-05-18T02:24:27.823402"
+    },
+    {
+      "asin": "B08X8X8X8X8",
+      "rank": 30,
+      "title": "Ponytail Hairpiece - 12 Inch Short",
+      "brand": "MiniHair",
+      "price": "$12.99",
+      "has_coupon": false,
+      "has_deal": false,
+      "has_lightning_deal": false,
+      "scrape_time": "2026-05-18T02:24:27.823403"
+    }
+  ],
+  "Hair Topper": [
+    {
+      "asin": "B09Y1Y1Y1Y1",
+      "rank": 1,
+      "title": "Hair Topper for Women - 18x18cm Base",
+      "brand": "TopperPro",
+      "price": "$49.99",
+      "has_coupon": true,
+      "has_deal": false,
+      "has_lightning_deal": false,
+      "scrape_time": "2026-05-18T02:24:27.823405"
+    },
+    {
+      "asin": "B09Y2Y2Y2Y2",
+      "rank": 5,
+      "title": "Clip-In Hair Topper - Human Hair",
+      "brand": "RealHair",
+      "price": "$79.99",
+      "has_coupon": false,
+      "has_deal": true,
+      "has_lightning_deal": false,
+      "scrape_time": "2026-05-18T02:24:27.823406"
+    },
+    {
+      "asin": "B09Y3Y3Y3Y3",
+      "rank": 6,
+      "title": "Synthetic Hair Topper - Blonde",
+      "brand": "BlondeBeauty",
+      "price": "$39.99",
+      "has_coupon": false,
+      "has_deal": false,
+      "has_lightning_deal": false,
+      "scrape_time": "2026-05-18T02:24:27.823408"
+    },
+    {
+      "asin": "B09Y4Y4Y4Y4",
+      "rank": 12,
+      "title": "Hair Topper with Bangs",
+      "brand": "BangsHair",
+      "price": "$54.99",
+      "has_coupon": false,
+      "has_deal": false,
+      "has_lightning_deal": false,
+      "scrape_time": "2026-05-18T02:24:27.823409"
+    },
+    {
+      "asin": "B09Y5Y5Y5Y5",
+      "rank": 18,
+      "title": "Large Base Hair Topper - 22x22cm",
+      "brand": "FullCoverage",
+      "price": "$69.99",
+      "has_coupon": true,
+      "has_deal": false,
+      "has_lightning_deal": false,
+      "scrape_time": "2026-05-18T02:24:27.823411"
+    },
+    {
+      "asin": "B09Y6Y6Y6Y6",
+      "rank": 22,
+      "title": "Thin Hair Topper - Lightweight",
+      "brand": "LightHair",
+      "price": "$44.99",
+      "has_coupon": false,
+      "has_deal": false,
+      "has_lightning_deal": false,
+      "scrape_time": "2026-05-18T02:24:27.823412"
+    },
+    {
+      "asin": "B09Y7Y7Y7Y7",
+      "rank": 28,
+      "title": "Hair Topper for Men",
+      "brand": "MensHair",
+      "price": "$35.99",
+      "has_coupon": false,
+      "has_deal": false,
+      "has_lightning_deal": false,
+      "scrape_time": "2026-05-18T02:24:27.823414"
+    },
+    {
+      "asin": "B09Y8Y8Y8Y8",
+      "rank": 35,
+      "title": "Ombre Hair Topper - Two Tone",
+      "brand": "OmbreStyle",
+      "price": "$59.99",
+      "has_coupon": false,
+      "has_deal": true,
+      "has_lightning_deal": false,
+      "scrape_time": "2026-05-18T02:24:27.823415"
+    }
+  ],
+  "Hair Extensions": [
+    {
+      "asin": "B0AZ1Z1Z1Z1",
+      "rank": 1,
+      "title": "Clip-In Hair Extensions - 20 Inch",
+      "brand": "ExtensionPro",
+      "price": "$39.99",
+      "has_coupon": false,
+      "has_deal": true,
+      "has_lightning_deal": false,
+      "scrape_time": "2026-05-18T02:24:27.823416"
+    },
+    {
+      "asin": "B0AZ2Z2Z2Z2",
+      "rank": 2,
+      "title": "Human Hair Extensions - Remy Hair",
+      "brand": "RemyBeauty",
+      "price": "$89.99",
+      "has_coupon": true,
+      "has_deal": false,
+      "has_lightning_deal": false,
+      "scrape_time": "2026-05-18T02:24:27.823418"
+    },
+    {
+      "asin": "B0AZ3Z3Z3Z3",
+      "rank": 3,
+      "title": "Synthetic Hair Extensions - 24 Inch",
+      "brand": "SynthHair",
+      "price": "$29.99",
+      "has_coupon": false,
+      "has_deal": false,
+      "has_lightning_deal": true,
+      "scrape_time": "2026-05-18T02:24:27.823419"
+    },
+    {
+      "asin": "B0AZ4Z4Z4Z4",
+      "rank": 10,
+      "title": "Tape-In Hair Extensions",
+      "brand": "TapeBeauty",
+      "price": "$59.99",
+      "has_coupon": false,
+      "has_deal": false,
+      "has_lightning_deal": false,
+      "scrape_time": "2026-05-18T02:24:27.823420"
+    },
+    {
+      "asin": "B0AZ5Z5Z5Z5",
+      "rank": 14,
+      "title": "Microbead Hair Extensions",
+      "brand": "MicroPro",
+      "price": "$69.99",
+      "has_coupon": true,
+      "has_deal": false,
+      "has_lightning_deal": false,
+      "scrape_time": "2026-05-18T02:24:27.823422"
+    },
+    {
+      "asin": "B0AZ6Z6Z6Z6",
+      "rank": 19,
+      "title": "Weft Hair Extensions",
+      "brand": "WeftBeauty",
+      "price": "$49.99",
+      "has_coupon": false,
+      "has_deal": false,
+      "has_lightning_deal": false,
+      "scrape_time": "2026-05-18T02:24:27.823423"
+    },
+    {
+      "asin": "B0AZ7Z7Z7Z7",
+      "rank": 26,
+      "title": "Halo Hair Extensions",
+      "brand": "HaloStyle",
+      "price": "$54.99",
+      "has_coupon": false,
+      "has_deal": true,
+      "has_lightning_deal": false,
+      "scrape_time": "2026-05-18T02:24:27.823425"
+    },
+    {
+      "asin": "B0AZ8Z8Z8Z8",
+      "rank": 32,
+      "title": "Clip-In Hair Extensions - Thick",
+      "brand": "ThickHair",
+      "price": "$44.99",
+      "has_coupon": false,
+      "has_deal": false,
+      "has_lightning_deal": false,
+      "scrape_time": "2026-05-18T02:24:27.823426"
+    }
+  ]
+}
