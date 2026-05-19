@@ -166,16 +166,18 @@ def generate_report(product_data, changes):
         change = changes[product_id]
         
         if change['is_first_run']:
-            change_text = "（首次抓取）"
+            change_text = "首次抓取"
         else:
             reviews_change = format_change(change['reviews_change'])
             rating_change = format_change(change['rating_change'], is_rating=True)
-            change_text = f"（评论{reviews_change}，评分{rating_change}）"
+            change_text = f"评论{reviews_change} | 评分{rating_change}"
         
         report_lines.extend([
-            f"📌 产品{product_id} - {product_info['name']}",
-            f"• 评分: {current['rating']}星 {change_text}",
-            f"• 评论总数: {current['reviews']}条",
+            f"🔹 产品{product_id}",
+            f"   ├─ 名称: {product_info['name']}",
+            f"   ├─ 评分: {current['rating']}星",
+            f"   ├─ 评论: {current['reviews']}条",
+            f"   └─ 变化: {change_text}",
             ""
         ])
     
