@@ -1,0 +1,33 @@
+{
+  "last_update": "2026-05-20T00:56:06.539483",
+  "products": {
+    "2122": {
+      "rating": null,
+      "review_count": null,
+      "fetch_time": "2026-05-20T00:56:06.962055",
+      "fetch_success": false,
+      "error": "Page too short, likely CAPTCHA or anti-bot protection"
+    },
+    "2132": {
+      "rating": null,
+      "review_count": null,
+      "fetch_time": "2026-05-20T00:56:09.376352",
+      "fetch_success": false,
+      "error": "Page too short, likely CAPTCHA or anti-bot protection"
+    },
+    "xfw": {
+      "rating": null,
+      "review_count": null,
+      "fetch_time": "2026-05-20T00:56:11.783829",
+      "fetch_success": false,
+      "error": "Page too short, likely CAPTCHA or anti-bot protection"
+    },
+    "2113": {
+      "rating": null,
+      "review_count": null,
+      "fetch_time": "2026-05-20T00:56:14.194806",
+      "fetch_success": false,
+      "error": "Page too short, likely CAPTCHA or anti-bot protection"
+    }
+  }
+}

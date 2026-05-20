@@ -1,0 +1,16 @@
+[Unit]
+Description=Amazon Isaic Review Monitor
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/workspace
+ExecStart=/root/.pyenv/shims/python /workspace/amazon_review_monitor.py
+Restart=on-failure
+RestartSec=10
+StandardOutput=append:/workspace/monitor.log
+StandardError=append:/workspace/monitor.log
+
+[Install]
+WantedBy=multi-user.target
