@@ -1,0 +1,13 @@
+# 亚马逊BSR周报 Crontab配置
+# 将此文件添加到crontab: crontab -e
+
+# 每周一早上9点执行周报生成
+0 9 * * 1 /workspace/run_weekly_report.sh >> /workspace/logs/weekly_report.log 2>&1
+
+# 每月1号早上9点清理旧报告（保留最近3个月）
+0 9 1 * * find /workspace/reports/ -name "*.md" -mtime +90 -delete
+
+# 说明:
+# - 0 9 * * 1: 每周一早上9点
+# - 分 时 日 月 周
+# - 2>&1: 重定向标准输出和错误输出到日志文件
