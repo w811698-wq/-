@@ -1,0 +1,71 @@
+{
+  "msg_type": "interactive",
+  "card": {
+    "header": {
+      "title": {
+        "tag": "plain_text",
+        "content": "📊 亚马逊假发 BSR 周报"
+      },
+      "template": "blue"
+    },
+    "elements": [
+      {
+        "tag": "div",
+        "text": {
+          "tag": "lark_md",
+          "content": "**📊 亚马逊假发类目 BSR 排名周报**\n📅 报告日期: **2026-07-13 Monday**\n🔍 监控范围: Top30 × 3个类目"
+        }
+      },
+      {
+        "tag": "hr"
+      },
+      {
+        "tag": "div",
+        "text": {
+          "tag": "lark_md",
+          "content": "**🟢 排名上升 ≥5 名**\n本周无显著上升"
+        }
+      },
+      {
+        "tag": "hr"
+      },
+      {
+        "tag": "div",
+        "text": {
+          "tag": "lark_md",
+          "content": "**🔴 排名下降 ≥5 名**\n本周无显著下降"
+        }
+      },
+      {
+        "tag": "hr"
+      },
+      {
+        "tag": "div",
+        "text": {
+          "tag": "lark_md",
+          "content": "**🆕 新上榜商品 (52 个)**\n| 品牌 | 类目 | 排名 | 价格 | 评分 |\n|------|------|------|------|------|\n| GOO | Hair Extensions | #1 | $356 | ⭐4.2 |\n| Sensationnel | Hair Extensions | #2 | $51 | ⭐4.6 |\n| Full | Hair Extensions | #3 | $129 | ⭐4.0 |\n| Hair | Hair Extensions | #4 | $68 | ⭐4.5 |\n| MOTFIN | Hair Extensions | #5 | $203 | ⭐4.0 |\n| GOO | Hair Extensions | #6 | $244 | ⭐4.0 |\n| Hair | Hair Extensions | #7 | $37 | ⭐4.5 |\n| WENNALIFE | Hair Extensions | #8 | $570 | ⭐4.1 |"
+        }
+      },
+      {
+        "tag": "hr"
+      },
+      {
+        "tag": "div",
+        "text": {
+          "tag": "lark_md",
+          "content": "**📋 各品类稳定性概览**\n| 类目 | 稳定商品数 | 占比图 |\n|------|------------|--------|\n| **Hair Extensions** | 0/30 | ░░░░░░░░░░░░░░░░░░░░ 0% |\n| **Ponytail Extension** | 0/18 | ░░░░░░░░░░░░░░░░░░░░ 0% |\n| **Hair Topper** | 0/4 | ░░░░░░░░░░░░░░░░░░░░ 0% |"
+        }
+      },
+      {
+        "tag": "hr"
+      },
+      {
+        "tag": "div",
+        "text": {
+          "tag": "lark_md",
+          "content": "**💡 关键结论 & 建议**\n- 市场格局相对**稳定**，无明显趋势性波动\n- ⚠️ **Prime Day期间**，排名波动可能受大型促销活动影响\n- 有52个新商品进入榜单，市场竞争持续加剧"
+        }
+      }
+    ]
+  }
+}

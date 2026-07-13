@@ -1,0 +1,6 @@
+#!/bin/bash
+# 放置于 /etc/cron.weekly/ 目录，每周自动执行
+# 亚马逊假发类目BSR排名周报
+
+cd /workspace
+/usr/bin/python3 /workspace/bsr_weekly_report.py >> /workspace/data/cron_weekly.log 2>&1
